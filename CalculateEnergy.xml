@@ -1,0 +1,31 @@
+<WaNoTemplate>
+    <WaNoMeta>
+        <Author>
+            <Name> J. Schaarschmidt </Name>
+        </Author>
+
+        <Description>
+            This script calculates the strain of a crystal structure, then writes the energy and volume data to a file.
+        </Description>
+
+    </WaNoMeta>
+
+    <WaNoRoot name="CalculateEnergy">
+        <WaNoFile logical_filename="structure.yml" name="Structure file">Structure file</WaNoFile>
+        <WaNoFile logical_filename="structure_strain.traj" name="Structure strain">Structure strain</WaNoFile>
+    </WaNoRoot>
+
+    <WaNoExecCommand>
+        simstack_server_mamba_source
+        conda activate qe
+        python CalculateEnergy.py
+    </WaNoExecCommand>
+
+    <WaNoInputFiles>
+        <WaNoInputFile logical_filename="CalculateEnergy.py">CalculateEnergy.py</WaNoInputFile>
+    </WaNoInputFiles>
+
+    <WaNoOutputFiles>
+        <WaNoOutputFile>strain.pwi</WaNoOutputFile>
+    </WaNoOutputFiles>
+</WaNoTemplate>

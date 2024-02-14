@@ -1,0 +1,16 @@
+{
+    "workflow_environment":"SimStack",
+    "title": "CalculateEnergy",
+    "description": "This is a WaNo template for the calculation of the energy",
+    "authors": [
+        "J. Schaarschmidt",
+        "A. Buldin"
+    ],
+    "version": "0.0.1",
+    "logo": "CalculateEnergy.png",
+    "keywords": [
+        "SimStack",
+        "WaNo",
+        "CalculateEnergy"
+    ]
+}
